@@ -1,0 +1,129 @@
+===== Exercise 4 Test Output =====
+--- Grid: 2 2 ---
+2026-03-06 15:46:24.557 | info     |             UMD | Established firmware bundle version: 19.4.2 (topology_discovery.cpp:399)
+2026-03-06 15:46:24.557 | info     |             UMD | Firmware bundle version 19.4.2 on the system is newer than the latest fully tested version 19.4.0 for blackhole architecture. Newest features may not be supported. (topology_discovery.cpp:425)
+2026-03-06 15:46:24.566 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:222)
+2026-03-06 15:46:24.581 | info     |             UMD | Established firmware bundle version: 19.4.2 (topology_discovery.cpp:399)
+2026-03-06 15:46:24.581 | info     |             UMD | Firmware bundle version 19.4.2 on the system is newer than the latest fully tested version 19.4.0 for blackhole architecture. Newest features may not be supported. (topology_discovery.cpp:425)
+2026-03-06 15:46:24.651 | info     |             UMD | Established firmware bundle version: 19.4.2 (topology_discovery.cpp:399)
+2026-03-06 15:46:24.651 | info     |             UMD | Firmware bundle version 19.4.2 on the system is newer than the latest fully tested version 19.4.0 for blackhole architecture. Newest features may not be supported. (topology_discovery.cpp:425)
+2026-03-06 15:46:24.659 | info     |             UMD | Harvesting masks for chip 2 tensix: 0x0 dram: 0x0 eth: 0x120 pcie: 0x2 l2cpu: 0x0 (cluster.cpp:337)
+2026-03-06 15:46:24.707 | info     |             UMD | Harvesting masks for chip 1 tensix: 0x0 dram: 0x0 eth: 0x120 pcie: 0x2 l2cpu: 0x0 (cluster.cpp:337)
+2026-03-06 15:46:24.723 | info     |             UMD | Harvesting masks for chip 3 tensix: 0x0 dram: 0x0 eth: 0x120 pcie: 0x2 l2cpu: 0x0 (cluster.cpp:337)
+2026-03-06 15:46:24.738 | info     |             UMD | Harvesting masks for chip 0 tensix: 0x0 dram: 0x0 eth: 0x120 pcie: 0x2 l2cpu: 0x0 (cluster.cpp:337)
+2026-03-06 15:46:24.753 | info     |             UMD | Opening local chip ids/PCIe ids: {0, 1, 2, 3}/[1, 2, 3, 0] and remote chip ids {} (cluster.cpp:184)
+2026-03-06 15:46:24.753 | info     |             UMD | IOMMU: disabled (cluster.cpp:159)
+2026-03-06 15:46:24.753 | info     |             UMD | KMD version: 2.7.0 (cluster.cpp:162)
+2026-03-06 15:46:24.756 | info     |             UMD | Starting devices in cluster (cluster.cpp:963)
+2026-03-06 15:46:24.757 | info     |             UMD | Mapped hugepage 0x200000000 to NOC address 0x1000000000000000 (silicon_sysmem_manager.cpp:207)
+2026-03-06 15:46:24.758 | info     |             UMD | Mapped hugepage 0x180000000 to NOC address 0x1000000000000000 (silicon_sysmem_manager.cpp:207)
+2026-03-06 15:46:24.760 | info     |             UMD | Mapped hugepage 0x140000000 to NOC address 0x1000000000000000 (silicon_sysmem_manager.cpp:207)
+2026-03-06 15:46:24.761 | info     |             UMD | Mapped hugepage 0x1c0000000 to NOC address 0x1000000000000000 (silicon_sysmem_manager.cpp:207)
+2026-03-06 15:46:25.674 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_context.cpp:928)
+2026-03-06 15:46:25.674 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_context.cpp:905)
+2026-03-06 15:46:25.675 | info     |          Fabric | TopologyMapper mapping start (mesh=0): n_log=4, n_phys=4, log_deg_hist={2:4}, phys_deg_hist={2:4} (topology_mapper_utils.cpp:171)
+2026-03-06 15:46:25.675 | info     |          Fabric | TopologyMapper mapping start (mesh=0): n_log=4, n_phys=4, log_deg_hist={2:4}, phys_deg_hist={2:4} (topology_mapper_utils.cpp:171)
+2026-03-06 15:46:25.758 | warning  |           Metal | Opening subset of mmio devices slows down UMD read/write to remote chips. If opening more devices, consider using CreateDevices API. (device_manager.cpp:301)
+Running Lab3 Ex4 (Multicast MatMul) on 2x2 grid...
+[Ex4-Multicast] core_grid=2x2  M_block=10  N_block=10  K_block=2  num_k_blocks=5  A_receivers=1  B_receivers=1
+Verification passed. max_abs_err=0.137403 max_rel_err=2531.03
+Test Passed!
+2026-03-06 15:46:26.065 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:471)
+2026-03-06 15:46:26.065 | info     |             UMD | Closing devices in cluster (cluster.cpp:974)
+
+--- Grid: 4 5 ---
+2026-03-06 15:46:27.430 | info     |             UMD | Established firmware bundle version: 19.4.2 (topology_discovery.cpp:399)
+2026-03-06 15:46:27.430 | info     |             UMD | Firmware bundle version 19.4.2 on the system is newer than the latest fully tested version 19.4.0 for blackhole architecture. Newest features may not be supported. (topology_discovery.cpp:425)
+2026-03-06 15:46:27.439 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:222)
+2026-03-06 15:46:27.454 | info     |             UMD | Established firmware bundle version: 19.4.2 (topology_discovery.cpp:399)
+2026-03-06 15:46:27.454 | info     |             UMD | Firmware bundle version 19.4.2 on the system is newer than the latest fully tested version 19.4.0 for blackhole architecture. Newest features may not be supported. (topology_discovery.cpp:425)
+2026-03-06 15:46:27.523 | info     |             UMD | Established firmware bundle version: 19.4.2 (topology_discovery.cpp:399)
+2026-03-06 15:46:27.523 | info     |             UMD | Firmware bundle version 19.4.2 on the system is newer than the latest fully tested version 19.4.0 for blackhole architecture. Newest features may not be supported. (topology_discovery.cpp:425)
+2026-03-06 15:46:27.532 | info     |             UMD | Harvesting masks for chip 2 tensix: 0x0 dram: 0x0 eth: 0x120 pcie: 0x2 l2cpu: 0x0 (cluster.cpp:337)
+2026-03-06 15:46:27.580 | info     |             UMD | Harvesting masks for chip 1 tensix: 0x0 dram: 0x0 eth: 0x120 pcie: 0x2 l2cpu: 0x0 (cluster.cpp:337)
+2026-03-06 15:46:27.595 | info     |             UMD | Harvesting masks for chip 3 tensix: 0x0 dram: 0x0 eth: 0x120 pcie: 0x2 l2cpu: 0x0 (cluster.cpp:337)
+2026-03-06 15:46:27.610 | info     |             UMD | Harvesting masks for chip 0 tensix: 0x0 dram: 0x0 eth: 0x120 pcie: 0x2 l2cpu: 0x0 (cluster.cpp:337)
+2026-03-06 15:46:27.625 | info     |             UMD | Opening local chip ids/PCIe ids: {0, 1, 2, 3}/[1, 2, 3, 0] and remote chip ids {} (cluster.cpp:184)
+2026-03-06 15:46:27.625 | info     |             UMD | IOMMU: disabled (cluster.cpp:159)
+2026-03-06 15:46:27.625 | info     |             UMD | KMD version: 2.7.0 (cluster.cpp:162)
+2026-03-06 15:46:27.629 | info     |             UMD | Starting devices in cluster (cluster.cpp:963)
+2026-03-06 15:46:27.629 | info     |             UMD | Mapped hugepage 0x200000000 to NOC address 0x1000000000000000 (silicon_sysmem_manager.cpp:207)
+2026-03-06 15:46:27.630 | info     |             UMD | Mapped hugepage 0x180000000 to NOC address 0x1000000000000000 (silicon_sysmem_manager.cpp:207)
+2026-03-06 15:46:27.632 | info     |             UMD | Mapped hugepage 0x140000000 to NOC address 0x1000000000000000 (silicon_sysmem_manager.cpp:207)
+2026-03-06 15:46:27.633 | info     |             UMD | Mapped hugepage 0x1c0000000 to NOC address 0x1000000000000000 (silicon_sysmem_manager.cpp:207)
+2026-03-06 15:46:28.457 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_context.cpp:928)
+2026-03-06 15:46:28.457 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_context.cpp:905)
+2026-03-06 15:46:28.457 | info     |          Fabric | TopologyMapper mapping start (mesh=0): n_log=4, n_phys=4, log_deg_hist={2:4}, phys_deg_hist={2:4} (topology_mapper_utils.cpp:171)
+2026-03-06 15:46:28.458 | info     |          Fabric | TopologyMapper mapping start (mesh=0): n_log=4, n_phys=4, log_deg_hist={2:4}, phys_deg_hist={2:4} (topology_mapper_utils.cpp:171)
+2026-03-06 15:46:28.548 | warning  |           Metal | Opening subset of mmio devices slows down UMD read/write to remote chips. If opening more devices, consider using CreateDevices API. (device_manager.cpp:301)
+Running Lab3 Ex4 (Multicast MatMul) on 4x5 grid...
+[Ex4-Multicast] core_grid=4x5  M_block=4  N_block=5  K_block=2  num_k_blocks=5  A_receivers=3  B_receivers=4
+Verification passed. max_abs_err=0.137403 max_rel_err=2531.03
+Test Passed!
+2026-03-06 15:46:28.852 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:471)
+2026-03-06 15:46:28.852 | info     |             UMD | Closing devices in cluster (cluster.cpp:974)
+
+--- Grid: 5 4 ---
+2026-03-06 15:46:30.143 | info     |             UMD | Established firmware bundle version: 19.4.2 (topology_discovery.cpp:399)
+2026-03-06 15:46:30.143 | info     |             UMD | Firmware bundle version 19.4.2 on the system is newer than the latest fully tested version 19.4.0 for blackhole architecture. Newest features may not be supported. (topology_discovery.cpp:425)
+2026-03-06 15:46:30.152 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:222)
+2026-03-06 15:46:30.167 | info     |             UMD | Established firmware bundle version: 19.4.2 (topology_discovery.cpp:399)
+2026-03-06 15:46:30.167 | info     |             UMD | Firmware bundle version 19.4.2 on the system is newer than the latest fully tested version 19.4.0 for blackhole architecture. Newest features may not be supported. (topology_discovery.cpp:425)
+2026-03-06 15:46:30.237 | info     |             UMD | Established firmware bundle version: 19.4.2 (topology_discovery.cpp:399)
+2026-03-06 15:46:30.237 | info     |             UMD | Firmware bundle version 19.4.2 on the system is newer than the latest fully tested version 19.4.0 for blackhole architecture. Newest features may not be supported. (topology_discovery.cpp:425)
+2026-03-06 15:46:30.246 | info     |             UMD | Harvesting masks for chip 2 tensix: 0x0 dram: 0x0 eth: 0x120 pcie: 0x2 l2cpu: 0x0 (cluster.cpp:337)
+2026-03-06 15:46:30.294 | info     |             UMD | Harvesting masks for chip 1 tensix: 0x0 dram: 0x0 eth: 0x120 pcie: 0x2 l2cpu: 0x0 (cluster.cpp:337)
+2026-03-06 15:46:30.309 | info     |             UMD | Harvesting masks for chip 3 tensix: 0x0 dram: 0x0 eth: 0x120 pcie: 0x2 l2cpu: 0x0 (cluster.cpp:337)
+2026-03-06 15:46:30.324 | info     |             UMD | Harvesting masks for chip 0 tensix: 0x0 dram: 0x0 eth: 0x120 pcie: 0x2 l2cpu: 0x0 (cluster.cpp:337)
+2026-03-06 15:46:30.339 | info     |             UMD | Opening local chip ids/PCIe ids: {0, 1, 2, 3}/[1, 2, 3, 0] and remote chip ids {} (cluster.cpp:184)
+2026-03-06 15:46:30.339 | info     |             UMD | IOMMU: disabled (cluster.cpp:159)
+2026-03-06 15:46:30.339 | info     |             UMD | KMD version: 2.7.0 (cluster.cpp:162)
+2026-03-06 15:46:30.342 | info     |             UMD | Starting devices in cluster (cluster.cpp:963)
+2026-03-06 15:46:30.343 | info     |             UMD | Mapped hugepage 0x200000000 to NOC address 0x1000000000000000 (silicon_sysmem_manager.cpp:207)
+2026-03-06 15:46:30.344 | info     |             UMD | Mapped hugepage 0x180000000 to NOC address 0x1000000000000000 (silicon_sysmem_manager.cpp:207)
+2026-03-06 15:46:30.345 | info     |             UMD | Mapped hugepage 0x140000000 to NOC address 0x1000000000000000 (silicon_sysmem_manager.cpp:207)
+2026-03-06 15:46:30.347 | info     |             UMD | Mapped hugepage 0x1c0000000 to NOC address 0x1000000000000000 (silicon_sysmem_manager.cpp:207)
+2026-03-06 15:46:31.175 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_context.cpp:928)
+2026-03-06 15:46:31.175 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_context.cpp:905)
+2026-03-06 15:46:31.175 | info     |          Fabric | TopologyMapper mapping start (mesh=0): n_log=4, n_phys=4, log_deg_hist={2:4}, phys_deg_hist={2:4} (topology_mapper_utils.cpp:171)
+2026-03-06 15:46:31.175 | info     |          Fabric | TopologyMapper mapping start (mesh=0): n_log=4, n_phys=4, log_deg_hist={2:4}, phys_deg_hist={2:4} (topology_mapper_utils.cpp:171)
+2026-03-06 15:46:31.262 | warning  |           Metal | Opening subset of mmio devices slows down UMD read/write to remote chips. If opening more devices, consider using CreateDevices API. (device_manager.cpp:301)
+Running Lab3 Ex4 (Multicast MatMul) on 5x4 grid...
+[Ex4-Multicast] core_grid=5x4  M_block=5  N_block=4  K_block=2  num_k_blocks=5  A_receivers=4  B_receivers=3
+Verification passed. max_abs_err=0.137403 max_rel_err=2531.03
+Test Passed!
+2026-03-06 15:46:31.569 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:471)
+2026-03-06 15:46:31.569 | info     |             UMD | Closing devices in cluster (cluster.cpp:974)
+
+--- Grid: 5 5 ---
+2026-03-06 15:46:32.947 | info     |             UMD | Established firmware bundle version: 19.4.2 (topology_discovery.cpp:399)
+2026-03-06 15:46:32.947 | info     |             UMD | Firmware bundle version 19.4.2 on the system is newer than the latest fully tested version 19.4.0 for blackhole architecture. Newest features may not be supported. (topology_discovery.cpp:425)
+2026-03-06 15:46:32.956 | info     |          Device | Opening user mode device driver (tt_cluster.cpp:222)
+2026-03-06 15:46:32.971 | info     |             UMD | Established firmware bundle version: 19.4.2 (topology_discovery.cpp:399)
+2026-03-06 15:46:32.971 | info     |             UMD | Firmware bundle version 19.4.2 on the system is newer than the latest fully tested version 19.4.0 for blackhole architecture. Newest features may not be supported. (topology_discovery.cpp:425)
+2026-03-06 15:46:33.042 | info     |             UMD | Established firmware bundle version: 19.4.2 (topology_discovery.cpp:399)
+2026-03-06 15:46:33.042 | info     |             UMD | Firmware bundle version 19.4.2 on the system is newer than the latest fully tested version 19.4.0 for blackhole architecture. Newest features may not be supported. (topology_discovery.cpp:425)
+2026-03-06 15:46:33.050 | info     |             UMD | Harvesting masks for chip 2 tensix: 0x0 dram: 0x0 eth: 0x120 pcie: 0x2 l2cpu: 0x0 (cluster.cpp:337)
+2026-03-06 15:46:33.098 | info     |             UMD | Harvesting masks for chip 1 tensix: 0x0 dram: 0x0 eth: 0x120 pcie: 0x2 l2cpu: 0x0 (cluster.cpp:337)
+2026-03-06 15:46:33.113 | info     |             UMD | Harvesting masks for chip 3 tensix: 0x0 dram: 0x0 eth: 0x120 pcie: 0x2 l2cpu: 0x0 (cluster.cpp:337)
+2026-03-06 15:46:33.129 | info     |             UMD | Harvesting masks for chip 0 tensix: 0x0 dram: 0x0 eth: 0x120 pcie: 0x2 l2cpu: 0x0 (cluster.cpp:337)
+2026-03-06 15:46:33.144 | info     |             UMD | Opening local chip ids/PCIe ids: {0, 1, 2, 3}/[1, 2, 3, 0] and remote chip ids {} (cluster.cpp:184)
+2026-03-06 15:46:33.144 | info     |             UMD | IOMMU: disabled (cluster.cpp:159)
+2026-03-06 15:46:33.144 | info     |             UMD | KMD version: 2.7.0 (cluster.cpp:162)
+2026-03-06 15:46:33.147 | info     |             UMD | Starting devices in cluster (cluster.cpp:963)
+2026-03-06 15:46:33.148 | info     |             UMD | Mapped hugepage 0x200000000 to NOC address 0x1000000000000000 (silicon_sysmem_manager.cpp:207)
+2026-03-06 15:46:33.149 | info     |             UMD | Mapped hugepage 0x180000000 to NOC address 0x1000000000000000 (silicon_sysmem_manager.cpp:207)
+2026-03-06 15:46:33.150 | info     |             UMD | Mapped hugepage 0x140000000 to NOC address 0x1000000000000000 (silicon_sysmem_manager.cpp:207)
+2026-03-06 15:46:33.152 | info     |             UMD | Mapped hugepage 0x1c0000000 to NOC address 0x1000000000000000 (silicon_sysmem_manager.cpp:207)
+2026-03-06 15:46:33.971 | info     |     Distributed | Using auto discovery to generate mesh graph. (metal_context.cpp:928)
+2026-03-06 15:46:33.971 | info     |     Distributed | Constructing control plane using auto-discovery (no mesh graph descriptor). (metal_context.cpp:905)
+2026-03-06 15:46:33.971 | info     |          Fabric | TopologyMapper mapping start (mesh=0): n_log=4, n_phys=4, log_deg_hist={2:4}, phys_deg_hist={2:4} (topology_mapper_utils.cpp:171)
+2026-03-06 15:46:33.971 | info     |          Fabric | TopologyMapper mapping start (mesh=0): n_log=4, n_phys=4, log_deg_hist={2:4}, phys_deg_hist={2:4} (topology_mapper_utils.cpp:171)
+2026-03-06 15:46:34.065 | warning  |           Metal | Opening subset of mmio devices slows down UMD read/write to remote chips. If opening more devices, consider using CreateDevices API. (device_manager.cpp:301)
+Running Lab3 Ex4 (Multicast MatMul) on 5x5 grid...
+[Ex4-Multicast] core_grid=5x5  M_block=4  N_block=4  K_block=2  num_k_blocks=5  A_receivers=4  B_receivers=4
+Verification passed. max_abs_err=0.137403 max_rel_err=2531.03
+Test Passed!
+2026-03-06 15:46:34.370 | info     |          Device | Closing user mode device drivers (tt_cluster.cpp:471)
+2026-03-06 15:46:34.370 | info     |             UMD | Closing devices in cluster (cluster.cpp:974)
+
