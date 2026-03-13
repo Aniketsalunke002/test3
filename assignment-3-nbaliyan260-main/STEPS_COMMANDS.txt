@@ -1,0 +1,57 @@
+================================================================================
+ASSIGNMENT 3 — STEP-BY-STEP COMMANDS (copy-paste one at a time)
+================================================================================
+
+--- STEP 0: Build (run once) ---
+cd /home/nazishbaliyan/assignment-1-single-core-matrix-multiplication-nbaliyan260/tt-metal
+./build_metal.sh
+→ SCREENSHOT when build finishes. Save as evidence/01_build_success.png
+
+--- STEP 1: Exercise 2 ---
+cd /home/nazishbaliyan/assignment-1-single-core-matrix-multiplication-nbaliyan260/tt-metal
+./build/ttnn/examples/lab3_ex2/lab3_ex2
+→ SCREENSHOT when you see "Test Passed". Save as evidence/02_exercise2_passed.png
+
+--- STEP 2: Exercise 3 ---
+cd /home/nazishbaliyan/assignment-1-single-core-matrix-multiplication-nbaliyan260/tt-metal
+./build/ttnn/examples/lab3_ex3/lab3_ex3
+→ SCREENSHOT when you see "Test Passed". Save as evidence/03_exercise3_passed.png
+
+--- STEP 3: Exercise 4 (5x5) ---
+cd /home/nazishbaliyan/assignment-1-single-core-matrix-multiplication-nbaliyan260/tt-metal
+./build/ttnn/examples/lab3_ex4/lab3_ex4 5 5 2
+→ SCREENSHOT when you see "Verification passed" and "Test Passed!". Save as evidence/04_exercise4_passed.png
+
+--- STEP 4: Exercise 4 (2x2) — optional ---
+cd /home/nazishbaliyan/assignment-1-single-core-matrix-multiplication-nbaliyan260/tt-metal
+./build/ttnn/examples/lab3_ex4/lab3_ex4 2 2 2
+→ SCREENSHOT when you see "Test Passed!". Save as evidence/05_exercise4_2x2_passed.png
+
+--- STEP 5: Lab 2 Ex2 (5x5) ---
+cd /home/nazishbaliyan/assignment-1-single-core-matrix-multiplication-nbaliyan260/tt-metal
+./build/ttnn/examples/lab2_matmul/lab2_matmul 5 5 2
+→ SCREENSHOT when you see "Verification passed". Save as evidence/06_lab2_ex2_passed.png
+
+--- STEP 6: Profiler — Exercise 2 ---
+cd /home/nazishbaliyan/assignment-1-single-core-matrix-multiplication-nbaliyan260/tt-metal
+TT_METAL_DEVICE_PROFILER=1 ./build/ttnn/examples/lab3_ex2/lab3_ex2
+→ SCREENSHOT when you see "Test Passed". Save as evidence/07_profiler_ex2.png
+
+--- STEP 7: Profiler — Exercise 3 ---
+cd /home/nazishbaliyan/assignment-1-single-core-matrix-multiplication-nbaliyan260/tt-metal
+TT_METAL_DEVICE_PROFILER=1 ./build/ttnn/examples/lab3_ex3/lab3_ex3
+→ SCREENSHOT when you see "Test Passed". Save as evidence/08_profiler_ex3.png
+
+--- STEP 8: Profiler — Exercise 4 ---
+cd /home/nazishbaliyan/assignment-1-single-core-matrix-multiplication-nbaliyan260/tt-metal
+TT_METAL_DEVICE_PROFILER=1 ./build/ttnn/examples/lab3_ex4/lab3_ex4 5 5 2
+→ SCREENSHOT when you see "Test Passed!". Save as evidence/09_profiler_ex4.png
+
+--- STEP 9: Profiler — Lab 2 Ex2 ---
+cd /home/nazishbaliyan/assignment-1-single-core-matrix-multiplication-nbaliyan260/tt-metal
+TT_METAL_DEVICE_PROFILER=1 ./build/ttnn/examples/lab2_matmul/lab2_matmul 5 5 2
+→ SCREENSHOT when you see "Verification passed". Save as evidence/10_profiler_lab2.png
+
+================================================================================
+After all steps: add screenshots to evidence/ folder, then commit and push.
+================================================================================
